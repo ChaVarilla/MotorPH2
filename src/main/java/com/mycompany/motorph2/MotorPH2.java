@@ -62,8 +62,8 @@ public class MotorPH2 {
         System.out.println("EARNINGS");
         System.out.println("(Note: Salary Earned is temporarily based on hourly rate)");
         System.out.println();
-        float sal =  data.sal[ind]/(21*8)*hw;// compute salary using hours worked
-        System.out.println("Salary Earned for the Period: "+sal);
+        float salary =  data.sal[ind]/(21*8)*hw;// compute salary using hours worked
+        System.out.println("Salary Earned for the Period: "+salary);
         System.out.println();    
         System.out.println();
 
@@ -76,7 +76,7 @@ public class MotorPH2 {
 
         System.out.println();
 
-        float gs = benefits+sal;
+        float gs = benefits+salary;
         System.out.println("Gross Salary:\t\t"+ gs);
 
         System.out.println();

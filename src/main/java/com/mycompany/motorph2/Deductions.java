@@ -103,7 +103,8 @@ public class Deductions {
                 tax = (data.sal[n]-666667)*0.35+200833.33;
             }
            
-            return (float) tax;
+            return (float) 
+                    tax;
     }
     
     public float computeTotalDeduction(int n){

@@ -101,6 +101,7 @@ public class Attendance {
             } 
        
         }
+         
         
         
         
@@ -124,7 +125,7 @@ public class Attendance {
                 System.out.println("Date is invalid.");               
             }   
         }
-
+        inputScanner.close();
         
         String[] sdateArray = timein[n];//index the time in array of the employee and save to variable 
         String[] edateArray =timeout[n];//index the time out array of the employee and save to variable       
@@ -166,8 +167,9 @@ public class Attendance {
             System.out.println("Total hours worked: "+tsum1);
             
             return tsum1;
+             
     }
-        
+      
     
     
    
