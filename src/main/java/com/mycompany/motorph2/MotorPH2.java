@@ -26,7 +26,7 @@ public class MotorPH2 {
             try{
                 int input = inputscan.nextInt();// save user output to variable enterNum
                 n = input-10001;
-                int arrayTest = data.empNum[n];// to test if given employee number is within array                                              
+                int arrayTest = data.getempNum()[n];// to test if given employee number is within array                                              
                 success=true;               
             }
             catch(Exception e){
@@ -45,34 +45,37 @@ public class MotorPH2 {
         Data data = new Data();                       
         int ind = m2.testEmployeeNumber();
         data.printDetails(ind);
+        
+        
+        System.out.println("Compute Hours Worked");
+        System.out.println();
+        
         float hw = attend.computeHoursWorked(ind);
-        
-        
-        
-          
+        System.out.println("Total Hours Worked:"+hw);
+        System.out.println();
 
         System.out.println("-------------------------------------------------------------------------------------------------------------------------------------------"); 
         System.out.println("PAYSLIP");            
         System.out.println();
-        System.out.println("Name:\t\t"+data.lastName[ind]+","+data.firstName[ind]);//get names using the file handling
-        System.out.println("Position:\t"+data.position[ind]);  
+        System.out.println("Name:\t\t"+data.getlastName()[ind]+","+data.getfirstName()[ind]);//get names using the file handling
+        System.out.println("Position:\t"+data.getposition()[ind]);  
         System.out.println("Salary Period: "+attend.inputDate[0]+" to "+attend.inputDate[1]); 
         System.out.println();
         System.out.println();
         System.out.println("EARNINGS");
         System.out.println("(Note: Salary Earned is temporarily based on hourly rate)");
         System.out.println();
-        float salary =  data.sal[ind]/(21*8)*hw;// compute salary using hours worked
+        float salary =  (data.getsal()[ind]/(21*8))*hw;// compute salary using hours worked
         System.out.println("Salary Earned for the Period: "+salary);
         System.out.println();    
         System.out.println();
 
 
         System.out.println("Benefits");// gets value from all the Data class using array indexing
-        System.out.println("Rice Subsidy:\t\t"+data.rice[ind]);
-        System.out.println("Phone Allowance:\t"+data.phone[ind]); 
-        System.out.println("Clothing Allowance:\t"+data.cloth[ind]);
-        float benefits = data.rice[ind]+ data.phone[ind]+data.cloth[ind];
+        System.out.println("Rice Subsidy:\t\t"+data.getrice()[ind]);
+        System.out.println("Phone Allowance:\t"+data.getphone()[ind]); 
+        System.out.println("Clothing Allowance:\t"+data.getcloth()[ind]);
+        float benefits = data.getrice()[ind]+ data.getphone()[ind]+data.getcloth()[ind];
 
         System.out.println();
 
