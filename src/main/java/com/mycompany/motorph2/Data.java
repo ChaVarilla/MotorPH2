@@ -131,36 +131,11 @@ public class Data {
     public String[] getfirstName(){
         return firstName;
     }
-    public String[] getbirthday(){
-        return birthday;
-    }
-    public String[] getaddress(){
-        return address;
-    }
-    public String[] getphoneNum(){
-        return phoneNum;
-    }
-    public String[] getsssNum(){
-        return sssNum;
-    }
-    public String[] getphNum(){
-        return phNum;
-    }
-    public String[] gettinNum(){
-        return tinNum;
-    }
-    public String[] getpgbNum(){
-        return pgbNum;
-    }
-    public String[] getstatus(){
-        return status;
-    }
+    
     public String[] getposition(){
         return position;
     }
-    public String[] getsup(){
-        return sup;
-    }
+   
     public float[] getsal(){
         return sal;
     }

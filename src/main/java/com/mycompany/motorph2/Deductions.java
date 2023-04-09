@@ -106,7 +106,7 @@ public class Deductions {
             return (float) 
                     tax;
     }
-    //function for total deductions
+    //function total deductions
     public float computeTotalDeduction(int n){
         float td = (float)(computesss(n)+computeph(n)+computepg(n)+computetax(n));
         return td;
